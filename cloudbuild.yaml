@@ -1,10 +1,13 @@
 steps:
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "testapp.yaml"]
+  waitFor: ['-']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "testapp2.yaml"]
+  waitFor: ['-']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "testapp3.yaml"]
+  waitFor: ['-']
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "testapp4.yaml"]
   waitFor: ['-']
