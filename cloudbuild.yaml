@@ -5,5 +5,4 @@ steps:
   args: ["app", "deploy", "testapp2.yaml"]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "testapp3.yaml"]
-  waitFor: ['-']
 timeout: "1600s"
