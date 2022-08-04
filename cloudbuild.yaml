@@ -8,4 +8,34 @@ steps:
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy", "testapp3.yaml"]
   waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp4.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp5.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp6.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp7.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp8.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp9.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp10.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp11.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp12.yaml"]
+  waitFor: ['-']
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy", "testapp13.yaml"]
+  waitFor: ['-'] 
 timeout: "1600s"
